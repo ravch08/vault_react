@@ -1,52 +1,10 @@
 import React from 'react';
 import Button from '../layout/Button';
 import TeamItem from '../layout/TeamItem';
+import { teamItems } from '../layout/Data';
 
-import Team1 from '../../assets/payment-solutions-team1.webp';
-import Team2 from '../../assets/payment-solutions-team2.webp';
-import Team3 from '../../assets/payment-solutions-team3.webp';
-import Team4 from '../../assets/payment-solutions-team4.webp';
 
 const Teams = () => {
-
-   const teamItems = [
-      {
-         id: 't1',
-         facebook: 'https://www.facebook.com/',
-         linkedIn: 'https://in.linkedin.com/',
-         twitter: 'https://twitter.com/',
-         imgSrc: Team1,
-         user: 'Sufia Anam',
-         designation: 'Senior Project Manager',
-      },
-      {
-         id: 't2',
-         facebook: 'https://www.facebook.com/',
-         linkedIn: 'https://in.linkedin.com/',
-         twitter: 'https://twitter.com/',
-         imgSrc: Team2,
-         user: 'Jubayer Al Hasan',
-         designation: 'Senior Developer',
-      },
-      {
-         id: 't3',
-         facebook: 'https://www.facebook.com/',
-         linkedIn: 'https://in.linkedin.com/',
-         twitter: 'https://twitter.com/',
-         imgSrc: Team3,
-         user: 'Muhibbur Rashid',
-         designation: 'Marketing Expertr',
-      },
-      {
-         id: 't4',
-         facebook: 'https://www.facebook.com/',
-         linkedIn: 'https://in.linkedin.com/',
-         twitter: 'https://twitter.com/',
-         imgSrc: Team4,
-         user: 'Rashed Kabir',
-         designation: 'Designer',
-      },
-   ];
 
    const teamItemsList = teamItems.map(teamItem => <TeamItem
       key={teamItem.id}

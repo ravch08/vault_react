@@ -1,25 +1,9 @@
 import React from 'react';
+
 import WhyItem from '../layout/WhyItem';
+import { whyItems } from '../layout/Data';
 
 const WhyVault = () => {
-
-   const whyItems = [
-      {
-         id: '01',
-         title: 'All credit card companies',
-         description: 'Pay with Visa, MasterCard, American Express, Discover, JCB and Union Pay with a few other simple taps.'
-      },
-      {
-         id: '02',
-         title: 'Touchless payments',
-         description: 'Tap to pay with Visa, MasterCard, American Express, Discover, JCB, Union Pay and more.'
-      },
-      {
-         id: '03',
-         title: 'Multi Currency',
-         description: 'Pay with your Visa, MasterCard, American Express, Discover, JCB, Union Pay and more in just a few quick taps.'
-      }
-   ];
 
    const whyItemsList = whyItems.map(whyitem => <WhyItem
       key={whyitem.id}
