@@ -19,11 +19,11 @@ const WhyVault = () => {
 
                <div className="heading-flex">
                   <h2>Why You Should <br /> Use Vault Bank</h2>
-                  <p>Clean Bank is the future of banking where money can be sent anywhere, anytime and you can
-                     hold your own private keys.
+                  <p>Clean Bank is the future of banking where money can be sent anywhere, anytime and you can hold your own private keys.
                   </p>
                </div>
-               <div className="why-items">{whyItemsList}</div>
+
+               <div className="why-items"> {whyItemsList} </div>
 
             </div>
          </div>

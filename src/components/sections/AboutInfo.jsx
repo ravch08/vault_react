@@ -28,9 +28,7 @@ const AboutInfo = () => {
                <div className="about-content">
                   <h2>We’ve Been <br /> Helping Customer <br /> Globally.</h2>
                   <h3>Who we are?</h3>
-                  <p>Vault is the world’s go-to partner for digital commerce, everywhere. From borderless payments to
-                     boundless growth, Payoneer promises any business, in any market, the technology, connections and
-                     confidence to participate and flourish in the new global economy
+                  <p>Vault is the world’s go-to partner for digital commerce, everywhere. From borderless payments to boundless growth, Payoneer promises any business, in any market, the technology, connections and confidence to participate and flourish in the new global economy
                   </p>
                   <span><em>Avg 4.8 rating</em> makes us world best.</span>
 

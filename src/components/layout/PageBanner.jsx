@@ -5,7 +5,7 @@ const PageBanner = (props) => {
       <section className="page-banner heroSection" aria-labelledby="About Us">
          <div className="container">
             <div className="heading">
-               <h1>{props.bannerHeading}</h1>
+               <h1> {props.bannerHeading} </h1>
             </div>
          </div>
       </section>

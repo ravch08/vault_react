@@ -54,6 +54,7 @@ const Testimonials = () => {
                   {testimonialItemsList}
 
                </Swiper >
+
             </div >
          </div >
       </section >

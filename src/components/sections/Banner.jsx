@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import BalanceCard from '../../assets/payment-solutions-balance-card.webp'
-import CreditCard from '../../assets/payment-solutions-credit-card.webp'
-import WorkerCard from '../../assets/payment-solutions-worker-card.webp'
+import CreditCard from '../../assets/payment-solutions-credit-card.webp';
+import WorkerCard from '../../assets/payment-solutions-worker-card.webp';
+import BalanceCard from '../../assets/payment-solutions-balance-card.webp';
 
 const Banner = () => {
 
@@ -14,9 +14,7 @@ const Banner = () => {
             <div className="banner-wrapper">
                <div className="banner-content">
                   <h1>Easy & Digital <br /> Online Payment <br /> Solutions</h1>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolor iure, repellendus
-                     eveniet
-                     error excepturi.
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolor iure, repellendus eveniet error excepturi.
                   </p>
                   <Link to="solutions" className="btn-primary">Get Started</Link>
 
@@ -61,7 +59,7 @@ const Banner = () => {
 
          </div>
       </section>
-   )
-}
+   );
+};
 
 export default Banner;

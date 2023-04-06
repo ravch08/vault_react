@@ -1,8 +1,8 @@
 import React from 'react';
 import Button from '../layout/Button';
 import TeamItem from '../layout/TeamItem';
-import { teamItems } from '../layout/Data';
 
+import { teamItems } from '../layout/Data';
 
 const Teams = () => {
 
@@ -28,9 +28,7 @@ const Teams = () => {
                <Button target="../contact" />
             </div>
 
-            <div className="team-items">
-               {teamItemsList}
-            </div>
+            <div className="team-items"> {teamItemsList} </div>
 
          </div>
       </section>

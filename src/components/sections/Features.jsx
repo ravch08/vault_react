@@ -22,7 +22,7 @@ const Features = () => {
                   </p>
                </div>
 
-               <div className="feature-items">{featureItemsList}</div>
+               <div className="feature-items"> {featureItemsList} </div>
 
             </div>
          </div>

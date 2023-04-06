@@ -10,9 +10,6 @@ import Footer from './components/sections/Footer';
 
 import './css/main.min.css';
 
-// Sticky scroll
-// https://stackoverflow.com/questions/62970456/how-to-create-sticky-headers-on-scroll-with-react
-
 function App() {
 
   return (
