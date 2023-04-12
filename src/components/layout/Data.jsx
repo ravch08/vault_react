@@ -1,13 +1,4 @@
-import Client1 from '../../assets/payment-solutions-face1.webp';
-import Client2 from '../../assets/payment-solutions-face2.webp';
-import Client3 from '../../assets/payment-solutions-face3.webp';
-import Client4 from '../../assets/payment-solutions-face4.webp';
-import Client5 from '../../assets/payment-solutions-face5.webp';
-
-import Team1 from '../../assets/payment-solutions-team1.webp';
-import Team2 from '../../assets/payment-solutions-team2.webp';
-import Team3 from '../../assets/payment-solutions-team3.webp';
-import Team4 from '../../assets/payment-solutions-team4.webp';
+import { Team1, Team2, Team3, Team4, Client1, Client2, Client3, Client4, Client5 } from "../layout/helper";
 
 const testimonialItems = [
    {

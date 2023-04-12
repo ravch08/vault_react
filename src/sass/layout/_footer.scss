@@ -58,12 +58,12 @@ footer {
    .scrollTop {
       bottom: 5%;
       right: 5%;
-      width: 4rem;
-      height: 4rem;
+      width: 5rem;
+      height: 5rem;
       border: none;
-      outline: none;
-      cursor: pointer;
       position: fixed;
+      cursor: pointer;
+      border-radius: 50%;
       transform: scale(0);
       @extend .flexRow-center;
       background-color: $color-primary;
@@ -78,6 +78,7 @@ footer {
       }
    }
 }
+
 
 // --------------------------------------------------------
 //                      MEDIA QUERIES

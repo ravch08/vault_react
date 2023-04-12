@@ -1,8 +1,7 @@
 import React from 'react';
-import Button from '../layout/Button';
-import TeamItem from '../layout/TeamItem';
 
 import { teamItems } from '../layout/Data';
+import { Button, TeamItem } from '../layout/helper';
 
 const Teams = () => {
 

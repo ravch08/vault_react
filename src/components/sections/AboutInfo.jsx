@@ -1,6 +1,5 @@
 import React from 'react';
-import Rating from '../layout/Rating';
-import Customer from '../../assets/payment-solutions-customer.webp';
+import { Customer, Rating } from '../layout/helper';;
 
 const AboutInfo = () => {
 

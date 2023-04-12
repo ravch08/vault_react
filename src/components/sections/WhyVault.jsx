@@ -1,7 +1,7 @@
 import React from 'react';
 
-import WhyItem from '../layout/WhyItem';
 import { whyItems } from '../layout/Data';
+import { WhyItem } from '../layout/helper';
 
 const WhyVault = () => {
 

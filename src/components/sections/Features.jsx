@@ -1,6 +1,6 @@
 import React from 'react';
 import { featureItems } from '../layout/Data';
-import FeatureItem from '../layout/FeatureItem';
+import { FeatureItem } from '../layout/helper';
 
 const featureItemsList = featureItems.map(featureItem => <FeatureItem
    key={featureItem.id}

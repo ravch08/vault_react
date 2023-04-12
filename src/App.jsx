@@ -1,12 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import Home from './pages/Home';
-import About from './pages/About';
-import Solutions from './pages/Solutions';
-import Contact from './pages/Contact';
-
-import Header from './components/sections/Header';
-import Footer from './components/sections/Footer';
+import { Home, About, Solutions, Contact, Header, Footer } from "./components/layout/helper";
 
 import './css/main.min.css';
 

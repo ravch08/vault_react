@@ -1,9 +1,5 @@
 import React from 'react';
-import Button from '../layout/Button';
-
-import VirtualCard1 from '../../assets/payment-solutions-spending-breakdown-card.webp';
-import VirtualCard2 from '../../assets/payment-solutions-balance-money-card.webp';
-import VirtualCard3 from '../../assets/payment-solutions-received-money-card.webp';
+import { VirtualCard1, VirtualCard2, VirtualCard3, Button } from '../layout/helper';
 
 const VirtualCards = () => {
 

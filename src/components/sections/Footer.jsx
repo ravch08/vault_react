@@ -1,10 +1,7 @@
 import { React } from 'react';
 import { Link } from 'react-router-dom';
 
-import Button from '../layout/Button';
-import ScrollToTop from '../layout/ScrollToTop';
-import SocialLinks from '../layout/SocialLinks';
-import Logo from '../../assets/payment-solutions-logo.webp';
+import { Logo, Button, ScrollToTop, SocialLinks } from '../layout/helper';
 
 const Footer = () => {
 

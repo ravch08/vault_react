@@ -1,8 +1,5 @@
 import React from 'react';
-import Button from '../layout/Button';
-
-import VisaCard from '../../assets/payment-solutions-visa-card.webp';
-import TransactionCard from '../../assets/payment-solutions-transactions-card.webp';
+import { VisaCard, TransactionCard, Button } from '../layout/helper';
 
 const Billing = () => {
 

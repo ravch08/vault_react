@@ -1,11 +1,6 @@
 import React from 'react';
 
-import Client1 from '../../assets/payment-solutions-logo-1.webp';
-import Client2 from '../../assets/payment-solutions-logo-2.webp';
-import Client3 from '../../assets/payment-solutions-logo-3.webp';
-import Client4 from '../../assets/payment-solutions-logo-4.webp';
-import Client5 from '../../assets/payment-solutions-logo-5.webp';
-import Client6 from '../../assets/payment-solutions-logo-6.webp';
+import { Client1, Client2, Client3, Client4, Client5, Client6 } from "../layout/helper";
 
 const Clients = () => {
 

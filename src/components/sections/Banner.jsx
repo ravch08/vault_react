@@ -1,9 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import CreditCard from '../../assets/payment-solutions-credit-card.webp';
-import WorkerCard from '../../assets/payment-solutions-worker-card.webp';
-import BalanceCard from '../../assets/payment-solutions-balance-card.webp';
+import { CreditCard, WorkerCard, BalanceCard } from "../layout/helper";
 
 const Banner = () => {
 

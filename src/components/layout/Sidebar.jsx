@@ -1,9 +1,7 @@
 import React from 'react';
 
 import { Link } from 'react-router-dom';
-import SocialLinks from './SocialLinks';
-
-import Logo from '../../assets/payment-solutions-logo.webp';
+import { Logo, SocialLinks } from '../layout/helper';
 
 const Sidebar = (props) => {
 
