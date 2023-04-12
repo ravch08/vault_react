@@ -1,5 +1,5 @@
 import React from 'react';
-import PageBanner from '../components/layout/PageBanner';
+import { PageBanner } from '../layout/helper';
 
 const Error = () => {
    return (

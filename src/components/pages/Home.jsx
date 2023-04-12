@@ -1,11 +1,5 @@
 import React from 'react';
-
-import Banner from '../components/sections/Banner';
-import Counter from '../components/sections/Counter';
-import WhyVault from '../components/sections/WhyVault';
-import Billing from '../components/sections/Billing';
-import VirtualCards from '../components/sections/VirtualCards';
-import Testimonials from '../components/sections/Testimonials';
+import { Banner, Counter, WhyVault, VirtualCards, Billing, Testimonials } from "../layout/helper"
 
 const Home = () => {
    return (

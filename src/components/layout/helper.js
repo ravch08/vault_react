@@ -3,17 +3,19 @@ export { default as Team1 } from '../../assets/payment-solutions-team1.webp';
 export { default as Team2 } from '../../assets/payment-solutions-team2.webp';
 export { default as Team3 } from '../../assets/payment-solutions-team3.webp';
 export { default as Team4 } from '../../assets/payment-solutions-team4.webp';
-export { default as Client1 } from '../../assets/payment-solutions-face1.webp';
-export { default as Client2 } from '../../assets/payment-solutions-face2.webp';
-export { default as Client3 } from '../../assets/payment-solutions-face3.webp';
-export { default as Client4 } from '../../assets/payment-solutions-face4.webp';
-export { default as Client5 } from '../../assets/payment-solutions-face5.webp';
+
+export { default as TestClient1 } from '../../assets/payment-solutions-face1.webp';
+export { default as TestClient2 } from '../../assets/payment-solutions-face2.webp';
+export { default as TestClient3 } from '../../assets/payment-solutions-face3.webp';
+export { default as TestClient4 } from '../../assets/payment-solutions-face4.webp';
+export { default as TestClient5 } from '../../assets/payment-solutions-face5.webp';
 export { default as Client1 } from '../../assets/payment-solutions-logo-1.webp';
 export { default as Client2 } from '../../assets/payment-solutions-logo-2.webp';
 export { default as Client3 } from '../../assets/payment-solutions-logo-3.webp';
 export { default as Client4 } from '../../assets/payment-solutions-logo-4.webp';
 export { default as Client5 } from '../../assets/payment-solutions-logo-5.webp';
 export { default as Client6 } from '../../assets/payment-solutions-logo-6.webp';
+
 export { default as Customer } from '../../assets/payment-solutions-customer.webp';
 export { default as VisaCard } from '../../assets/payment-solutions-visa-card.webp';
 export { default as CreditCard } from '../../assets/payment-solutions-credit-card.webp';

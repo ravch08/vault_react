@@ -1,37 +1,37 @@
-import { Team1, Team2, Team3, Team4, Client1, Client2, Client3, Client4, Client5 } from "../layout/helper";
+import { Team1, Team2, Team3, Team4, TestClient1, TestClient2, TestClient3, TestClient4, TestClient5 } from "../layout/helper";
 
 const testimonialItems = [
    {
       id: 't1',
-      imgSrc: Client1,
+      imgSrc: TestClient1,
       user: 'Hannah Smith',
       designation: 'SEO Specialist',
       description: 'The Citi Simplicity card offers a very long introductory period for balance transfers and carries minimal fees, making it a great option if you’re ready to put debt behind.'
    },
    {
       id: 't2',
-      imgSrc: Client2,
+      imgSrc: TestClient2,
       user: 'Mikaela Stone',
       designation: 'PPC Specialist',
       description: 'The Citi Simplicity card offers a very long introductory period for balance transfers and carries minimal fees, making it a great option if you’re ready to put debt behind.'
    },
    {
       id: 't3',
-      imgSrc: Client3,
+      imgSrc: TestClient3,
       user: 'Jho Deo',
       designation: 'Web Designer',
       description: 'The Citi Simplicity card offers a very long introductory period for balance transfers and carries minimal fees, making it a great option if you’re ready to put debt behind.'
    },
    {
       id: 't4',
-      imgSrc: Client4,
+      imgSrc: TestClient4,
       user: 'Maria Mak',
       designation: 'Web Expert',
       description: 'The Citi Simplicity card offers a very long introductory period for balance transfers and carries minimal fees, making it a great option if you’re ready to put debt behind.'
    },
    {
       id: 't5',
-      imgSrc: Client5,
+      imgSrc: TestClient5,
       user: 'Sam Smith',
       designation: 'Front-End Developer',
       description: 'The Citi Simplicity card offers a very long introductory period for balance transfers and carries minimal fees, making it a great option if you’re ready to put debt behind.'

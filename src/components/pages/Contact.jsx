@@ -1,8 +1,5 @@
 import React from 'react';
-
-import PageBanner from '../components/layout/PageBanner';
-import ContactForm from '../components/layout/ContactForm';
-import Location from '../components/layout/Location'
+import { PageBanner, ContactForm, Location } from "../layout/helper";
 
 const Contact = () => {
 

@@ -1,10 +1,5 @@
 import React from 'react';
-
-import PageBanner from '../components/layout/PageBanner';
-import Features from '../components/sections/Features';
-import VirtualCards from '../components/sections/VirtualCards';
-import Billing from '../components/sections/Billing';
-import Clients from '../components/sections/Clients';
+import { PageBanner, Features, VirtualCards, Billing, Clients } from "../layout/helper";
 
 const Solutions = () => {
    return (
