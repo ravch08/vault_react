@@ -10,6 +10,14 @@ const Header = () => {
 
    const sidebarHandler = () => setShowSidebar(!showSidebar);
 
+   const toTop = () => {
+      window.scrollTo({
+         top: 0,
+         left: 0,
+         behavior: 'auto'
+      });
+   };
+
    const isSticky = () => {
       const scrollTop = window.scrollY;
       const stickyClass = scrollTop >= 250 ? "is-Sticky" : "";
@@ -34,10 +42,10 @@ const Header = () => {
 
                <nav aria-labelledby="Primary Navigation" className="navbar">
                   <ul className="nav-list">
-                     <li className="nav-item"><Link to="../" className="nav-link">Home</Link></li>
-                     <li className="nav-item"><Link to="../about" className="nav-link">About Us</Link></li>
-                     <li className="nav-item"><Link to="../solutions" className="nav-link">Solutions</Link></li>
-                     <li className="nav-item"><Link to="../contact" className="nav-link">Contact</Link></li>
+                     <li className="nav-item"><Link to="../" className="nav-link" onClick={toTop}>Home</Link></li>
+                     <li className="nav-item"><Link to="../about" className="nav-link" onClick={toTop}>About Us</Link></li>
+                     <li className="nav-item"><Link to="../solutions" className="nav-link" onClick={toTop}>Solutions</Link></li>
+                     <li className="nav-item"><Link to="../contact" className="nav-link" onClick={toTop}>Contact</Link></li>
                   </ul>
 
                   <Button target="contact" />

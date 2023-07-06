@@ -1,6 +1,6 @@
 import React from 'react';
 
-import testimonialItems from '../layout/Data';
+import { testimonialItems } from '../layout/Data';
 import { TestimonialItem } from '../layout/helper';
 
 import { Swiper, SwiperSlide } from 'swiper/react';

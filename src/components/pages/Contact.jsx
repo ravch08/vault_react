@@ -4,11 +4,11 @@ import { PageBanner, ContactForm, Location } from "../layout/helper";
 const Contact = () => {
 
    return (
-      <React.Fragment>
+      <main>
          <PageBanner bannerHeading="Contact" />
          <ContactForm />
          <Location />
-      </React.Fragment>
+      </main>
    );
 };
 

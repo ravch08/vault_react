@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const ContactForm = () => {
+
    return (
       <section className="contact-form" aria-labelledby="contact form">
          <div className="container">

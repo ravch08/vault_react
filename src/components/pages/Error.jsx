@@ -2,10 +2,11 @@ import React from 'react';
 import { PageBanner } from '../layout/helper';
 
 const Error = () => {
+
    return (
-      <section>
+      <main>
          <PageBanner bannerHeading={`404  Page not Found`} />
-      </section>
+      </main>
    );
 };
 

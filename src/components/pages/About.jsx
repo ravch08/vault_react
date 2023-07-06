@@ -3,12 +3,12 @@ import { AboutInfo, PageBanner, Counter, Teams } from "../layout/helper";
 
 const About = () => {
    return (
-      <React.Fragment>
+      <main>
          <PageBanner bannerHeading="About Us" />
          <AboutInfo />
          <Counter />
          <Teams />
-      </React.Fragment>
+      </main>
    );
 };
 

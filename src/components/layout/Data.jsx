@@ -1,6 +1,6 @@
 import { Team1, Team2, Team3, Team4, TestClient1, TestClient2, TestClient3, TestClient4, TestClient5 } from "../layout/helper";
 
-const testimonialItems = [
+export const testimonialItems = [
    {
       id: 't1',
       imgSrc: TestClient1,
@@ -150,5 +150,3 @@ export const whyItems = [
       description: 'Pay with your Visa, MasterCard, American Express, Discover, JCB, Union Pay and more in just a few quick taps.'
    }
 ];
-
-export default testimonialItems;

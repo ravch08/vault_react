@@ -3,13 +3,13 @@ import { PageBanner, Features, VirtualCards, Billing, Clients } from "../layout/
 
 const Solutions = () => {
    return (
-      <>
+      <main>
          <PageBanner bannerHeading="Solutions" />
          <Features />
          <VirtualCards />
          <Billing />
          <Clients />
-      </>
+      </main>
    );
 };
 

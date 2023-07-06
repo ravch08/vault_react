@@ -3,14 +3,14 @@ import { Banner, Counter, WhyVault, VirtualCards, Billing, Testimonials } from "
 
 const Home = () => {
    return (
-      <React.Fragment>
+      <main>
          <Banner />
          <Counter />
          <WhyVault />
          <VirtualCards />
          <Billing />
          <Testimonials />
-      </React.Fragment>
+      </main>
    );
 };
 
