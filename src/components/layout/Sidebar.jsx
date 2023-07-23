@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { Logo, SocialLinks } from '../layout/helper';
 
 const Sidebar = (props) => {
@@ -25,18 +25,16 @@ const Sidebar = (props) => {
 
                <nav aria-labelledby="Mobile Navigation">
                   <ul className="sidebar-navlist">
-                     <li className="sidebar-item"><Link to="/" className="sidebar-link" onClick={props.handler}>Home</Link></li>
-                     <li className="sidebar-item"><Link to="/about" className="sidebar-link" onClick={props.handler}>About Us</Link></li>
-                     <li className="sidebar-item"><Link to="/solutions" className="sidebar-link" onClick={props.handler}>Solutions</Link></li>
-                     <li className="sidebar-item"><Link to="/contact" className="sidebar-link" onClick={props.handler}>Contact</Link></li>
+                     <li className="sidebar-item"><NavLink to="/" className="sidebar-link" onClick={props.handler}>Home</NavLink></li>
+                     <li className="sidebar-item"><NavLink to="/about" className="sidebar-link" onClick={props.handler}>About Us</NavLink></li>
+                     <li className="sidebar-item"><NavLink to="/solutions" className="sidebar-link" onClick={props.handler}>Solutions</NavLink></li>
+                     <li className="sidebar-item"><NavLink to="/contact" className="sidebar-link" onClick={props.handler}>Contact</NavLink></li>
                   </ul>
                </nav>
 
                <div className="sidebar-footer">
-
                   <SocialLinks />
                   <Link to="../contact" className="btn-primary" onClick={props.handler}>Get Started</Link>
-
                </div>
 
             </div>

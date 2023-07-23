@@ -2,7 +2,7 @@ import React, { useLayoutEffect } from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { Home, About, Solutions, Contact, Header, Footer } from "./components/layout/helper";
 
-import './css/main.min.css';
+import './sass/main.scss';
 
 const Wrapper = ({ children }) => {
   const location = useLocation();
