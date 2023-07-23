@@ -1,6 +1,6 @@
 import React, { useLayoutEffect } from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
-import { Home, About, Solutions, Contact, Header, Footer } from "./components/layout/helper";
+import { Home, About, Solutions, Contact, Header, Footer, Page404 } from "./components/layout/helper";
 
 import './sass/main.scss';
 
@@ -23,7 +23,7 @@ function App() {
           <Route path='about' element={<About />} />
           <Route path='solutions' element={<Solutions />} />
           <Route path='contact' element={<Contact />} />
-          <Route path='*' element={<Error />} />
+          <Route path='*' element={<Page404 />} />
         </Routes>
         <Footer />
       </Wrapper>

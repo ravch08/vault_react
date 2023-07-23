@@ -6,7 +6,7 @@ const ScrollToTop = () => {
 
    const isScrollToTop = () => {
       const scrollTop = window.scrollY;
-      const scrollClass = scrollTop >= 250 ? "show-scrollTop" : "";
+      const scrollClass = scrollTop >= 150 ? "show-scrollTop" : "";
       setScrollToTop(scrollClass);
    };
 

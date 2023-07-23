@@ -41,7 +41,7 @@ export { default as TestimonialItem } from "../layout/TestimonialItem";
 
 export { default as Home } from "../pages/Home";
 export { default as About } from "../pages/About";
-export { default as Error } from "../pages/Error";
+export { default as Page404 } from "../pages/Page404";
 export { default as Contact } from "../pages/Contact";
 export { default as Solutions } from "../pages/Solutions";
 
