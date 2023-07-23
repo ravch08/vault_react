@@ -29,7 +29,7 @@ const Header = () => {
 				<div className="header-wrapper">
 
 					<Link to='/' className='nav-brand'>
-						<img src={Logo} width="90" alt="Vault Payments solution" />
+						<img src={Logo} loading='lazy' width="90" alt="Vault Payments solution" />
 					</Link>
 
 					<nav aria-labelledby="Primary Navigation" className="navbar">
