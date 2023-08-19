@@ -1,16 +1,22 @@
-import React from 'react';
-import { PageBanner, Features, VirtualCards, Billing, Clients } from "../layout/helper";
+import React from "react";
+import {
+  Billing,
+  Clients,
+  Features,
+  PageBanner,
+  VirtualCards,
+} from "../utils/helper";
 
 const Solutions = () => {
-   return (
-      <main>
-         <PageBanner bannerHeading="Solutions" />
-         <Features />
-         <VirtualCards />
-         <Billing />
-         <Clients />
-      </main>
-   );
+  return (
+    <main>
+      <PageBanner bannerHeading="Solutions" />
+      <Features />
+      <VirtualCards />
+      <Billing />
+      <Clients />
+    </main>
+  );
 };
 
 export default Solutions;

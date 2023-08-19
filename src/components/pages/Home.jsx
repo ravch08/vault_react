@@ -1,17 +1,24 @@
-import React from 'react';
-import { Banner, Counter, WhyVault, VirtualCards, Billing, Testimonials } from "../layout/helper"
+import React from "react";
+import {
+  Banner,
+  Billing,
+  Counter,
+  Testimonials,
+  VirtualCards,
+  WhyVault,
+} from "../utils/helper";
 
 const Home = () => {
-   return (
-      <main>
-         <Banner />
-         <Counter />
-         <WhyVault />
-         <VirtualCards />
-         <Billing />
-         <Testimonials />
-      </main>
-   );
+  return (
+    <main>
+      <Banner />
+      <Counter />
+      <WhyVault />
+      <VirtualCards />
+      <Billing />
+      <Testimonials />
+    </main>
+  );
 };
 
 export default Home;

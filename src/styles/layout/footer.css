@@ -1,8 +1,6 @@
-@use "../abstracts/helper" as *;
-
 footer {
-  padding: $section-padding 0;
-  background-color: $color-secondary;
+  padding: var(--section-padding 0);
+  background-color: var(--color-secondary);
 
   .footer-heading {
     width: 80%;
@@ -18,11 +16,15 @@ footer {
   }
 
   .footer-items {
-    @extend .flexRow-end;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
   }
 
   .footer-list {
-    @extend .flexColumn-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 
     p {
       font-size: 1.3rem;
@@ -40,7 +42,7 @@ footer {
       transition: color 0.3s ease-in-out;
 
       &:hover {
-        color: $color-primary;
+        color: var(--color-primary);
       }
     }
 
@@ -64,12 +66,14 @@ footer {
     cursor: pointer;
     border-radius: 50%;
     transform: scale(0);
-    @extend .flexRow-center;
-    background-color: $color-primary;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-primary);
     transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
 
     &:hover {
-      background-color: darken($color-primary, 10%);
+      background-color: var(--color-primary-hover);
     }
 
     &.show-scrollTop {
@@ -78,9 +82,9 @@ footer {
   }
 }
 
-// --------------------------------------------------------
+/* // --------------------------------------------------------
 //                      MEDIA QUERIES
-// --------------------------------------------------------
+// -------------------------------------------------------- */
 
 @media screen and (max-width: 768px) {
   .heading-flex {
@@ -89,6 +93,7 @@ footer {
   }
 
   footer {
+    padding: 6rem 0;
     .footer-heading {
       width: 100%;
       margin-bottom: 3rem;

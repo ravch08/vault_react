@@ -1,15 +1,14 @@
-import React from 'react';
-import { PageBanner, ContactForm, Location } from "../layout/helper";
+import React from "react";
+import { ContactForm, Location, PageBanner } from "../utils/helper";
 
 const Contact = () => {
-
-   return (
-      <main>
-         <PageBanner bannerHeading="Contact" />
-         <ContactForm />
-         <Location />
-      </main>
-   );
+  return (
+    <main>
+      <PageBanner bannerHeading="Contact" />
+      <ContactForm />
+      <Location />
+    </main>
+  );
 };
 
 export default Contact;

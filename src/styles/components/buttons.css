@@ -1,0 +1,46 @@
+.btn-primary {
+  font-weight: 600;
+  overflow: hidden;
+  position: relative;
+  border-radius: 1rem;
+  display: inline-block;
+  padding: 1.8rem 3.6rem;
+  color: var(--color-Dark-800);
+  font-size: var(--fs-subheading);
+  background-color: var(--color-primary);
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out,
+    box-shoadow 0.3s ease-in-out;
+
+  &::before {
+    content: "Get Started";
+    left: 50%;
+    top: 80%;
+    width: 100%;
+    opacity: 0;
+    text-align: center;
+    visibility: hidden;
+    position: absolute;
+    border-radius: 1rem;
+    transition: top 0.3s ease-in-out;
+    transform: translate(-50%, -50%);
+  }
+
+  &:hover {
+    color: transparent;
+    box-shadow: var(--box-shadow-md);
+    background-color: var(--color-tertiary);
+
+    &::before {
+      top: 50%;
+      opacity: 1;
+      color: white;
+      visibility: visible;
+    }
+  }
+}
+
+.btn-close {
+  svg {
+    fill: white;
+  }
+}
