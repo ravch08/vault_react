@@ -1,9 +1,9 @@
 import { FeatureItemProps } from "../../types/types";
 
-const FeatureItem = ({ svg, title, description }: FeatureItemProps) => {
+const FeatureItem = ({ imgSrc, title, description }: FeatureItemProps) => {
   return (
     <div className="feature-item">
-      {svg}
+      <img src={imgSrc} alt={title} />
       <h3>{title}</h3>
       <p>{description}</p>
     </div>

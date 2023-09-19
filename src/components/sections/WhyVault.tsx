@@ -1,8 +1,19 @@
-import { whyItems } from "../utils/data";
-import { WhyItem } from "../utils/helper";
+import { useQuery } from "@tanstack/react-query";
+import { getWhyItems } from "../../services/apiWhyItems";
+import { Loader, WhyItem } from "../utils/helper";
 
 const WhyVault = () => {
-  const whyItemsList = whyItems.map((whyitem) => (
+  const { data, isLoading, error } = useQuery({
+    queryKey: ["whyItems"],
+    queryFn: getWhyItems,
+  });
+
+  if (error) {
+    console.error(error);
+    throw new Error("Could not load why items!");
+  }
+
+  const whyItemsList = data?.map((whyitem) => (
     <WhyItem
       id={whyitem.id}
       key={whyitem.id}
@@ -25,7 +36,9 @@ const WhyVault = () => {
             </p>
           </div>
 
-          <div className="why-items"> {whyItemsList} </div>
+          <div className="why-items">
+            {isLoading ? <Loader /> : whyItemsList}
+          </div>
         </div>
       </div>
     </section>

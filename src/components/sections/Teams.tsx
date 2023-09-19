@@ -1,8 +1,20 @@
-import { teamItems } from "../utils/data";
-import { Button, TeamItem } from "../utils/helper";
+import { useQuery } from "@tanstack/react-query";
+
+import { getTeams } from "../../services/apiTeams";
+import { Button, Loader, TeamItem } from "../utils/helper";
 
 const Teams = () => {
-  const teamItemsList = teamItems.map((teamItem) => (
+  const { data, isLoading, error } = useQuery({
+    queryKey: ["teams"],
+    queryFn: getTeams,
+  });
+
+  if (error) {
+    console.error(error);
+    throw new Error("Could not load Testimonial Items!");
+  }
+
+  const teamItemsList = data?.map((teamItem) => (
     <TeamItem
       key={teamItem.id}
       user={teamItem.user}
@@ -25,7 +37,9 @@ const Teams = () => {
           <Button target="../contact" />
         </div>
 
-        <div className="team-items"> {teamItemsList} </div>
+        <div className="team-items">
+          {isLoading ? <Loader /> : teamItemsList}
+        </div>
       </div>
     </section>
   );

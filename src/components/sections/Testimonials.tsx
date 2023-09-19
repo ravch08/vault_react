@@ -1,11 +1,22 @@
-import { testimonialItems } from "../utils/data";
-import { TestimonialItem } from "../utils/helper";
+import { useQuery } from "@tanstack/react-query";
+import { Loader, TestimonialItem } from "../utils/helper";
 
 import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { getTestimonials } from "../../services/apiTestimonials";
 
 const Testimonials = () => {
-  const testimonialItemsList = testimonialItems.map((testimonialItem) => (
+  const { data, error, isLoading } = useQuery({
+    queryKey: ["testimonialItems"],
+    queryFn: getTestimonials,
+  });
+
+  if (error) {
+    console.error(error);
+    throw new Error("Could not load Testimonial Items!");
+  }
+
+  const testimonialItemsList = data?.map((testimonialItem) => (
     <SwiperSlide key={testimonialItem.id}>
       <TestimonialItem
         user={testimonialItem.user}
@@ -45,7 +56,7 @@ const Testimonials = () => {
               },
             }}
           >
-            {testimonialItemsList}
+            {isLoading ? <Loader /> : testimonialItemsList}
           </Swiper>
         </div>
       </div>

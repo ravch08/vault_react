@@ -18,8 +18,8 @@ export type SidebarProps = {
 };
 
 export type FeatureItemProps = {
-  svg: React.ReactNode;
   title: string;
+  imgSrc: string;
   description: string;
 };
 

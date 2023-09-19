@@ -29,6 +29,7 @@ export { default as WorkerCard } from "../../assets/payment-solutions-worker-car
 export { default as Button } from "../layout/Button";
 export { default as ContactForm } from "../layout/ContactForm";
 export { default as FeatureItem } from "../layout/FeatureItem";
+export { default as Loader } from "../layout/Loader";
 export { default as Location } from "../layout/Location";
 export { default as PageBanner } from "../layout/PageBanner";
 export { default as Rating } from "../layout/Rating";

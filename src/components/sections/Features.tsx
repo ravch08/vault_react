@@ -1,16 +1,28 @@
-import { featureItems } from "../utils/data";
-import { FeatureItem } from "../utils/helper";
+import { useQuery } from "@tanstack/react-query";
 
-const featureItemsList = featureItems.map((featureItem) => (
-  <FeatureItem
-    key={featureItem.id}
-    svg={featureItem.svg}
-    title={featureItem.title}
-    description={featureItem.description}
-  />
-));
+import { getFeatures } from "../../services/apiFeatures";
+import { FeatureItem, Loader } from "../utils/helper";
 
 const Features = () => {
+  const { data, error, isLoading } = useQuery({
+    queryKey: ["featureItems"],
+    queryFn: getFeatures,
+  });
+
+  if (error) {
+    console.error(error);
+    throw new Error("Could not load Testimonial Items!");
+  }
+
+  const featureItemsList = data?.map((featureItem) => (
+    <FeatureItem
+      key={featureItem.id}
+      title={featureItem.title}
+      imgSrc={featureItem.imgSrc}
+      description={featureItem.description}
+    />
+  ));
+
   return (
     <section className="features" aria-labelledby="Features">
       <div className="container">
@@ -25,7 +37,9 @@ const Features = () => {
             </p>
           </div>
 
-          <div className="feature-items"> {featureItemsList} </div>
+          <div className="feature-items">
+            {isLoading ? <Loader /> : featureItemsList}
+          </div>
         </div>
       </div>
     </section>
