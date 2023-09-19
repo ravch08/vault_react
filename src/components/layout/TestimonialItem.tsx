@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 import { TestimonialProps } from "../../types/types";
 import { Rating } from "../utils/helper";
 
@@ -14,13 +13,6 @@ const TestimonialItem = (props: TestimonialProps) => {
       <Rating rating={props.rating} />
     </div>
   );
-};
-
-TestimonialItem.prototype = {
-  user: PropTypes.string.isRequired,
-  imgSrc: PropTypes.string.isRequired,
-  designation: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
 };
 
 export default TestimonialItem;

@@ -12,6 +12,11 @@ export type RatingProps = {
   rating: number;
 };
 
+export type SidebarProps = {
+  classNm: string;
+  handler: () => void;
+};
+
 export type FeatureItemProps = {
   svg: React.ReactNode;
   title: string;

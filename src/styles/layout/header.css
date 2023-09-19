@@ -44,7 +44,7 @@ header {
     }
 
     &:hover {
-      color: var(--fm-primary);
+      color: var(--color-primary);
     }
   }
 }

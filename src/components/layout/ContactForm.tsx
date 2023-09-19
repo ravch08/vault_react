@@ -3,14 +3,11 @@ import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { SubmitHandlerProps } from "../../types/types";
 
-// import { DevTool } from '@hookform/devtools';
-
 const ContactForm = () => {
   const {
     register,
     reset,
     handleSubmit,
-    control,
     formState: { errors },
   } = useForm();
 

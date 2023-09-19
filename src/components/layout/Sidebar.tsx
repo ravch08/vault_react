@@ -1,12 +1,11 @@
-import PropTypes from "prop-types";
-import React from "react";
-
 import { Link, NavLink } from "react-router-dom";
 import { Logo, SocialLinks } from "../utils/helper";
 
-const Sidebar = (props) => {
+import { SidebarProps } from "../../types/types";
+
+const Sidebar = ({ classNm, handler }: SidebarProps) => {
   return (
-    <div className={props.classNm}>
+    <div className={classNm}>
       <div className="container-fluid">
         <div className="sidebar-wrapper">
           <div className="sidebar-topbar">
@@ -14,7 +13,7 @@ const Sidebar = (props) => {
               <img src={Logo} width="100" alt="Vault Payments solution" />
             </Link>
 
-            <Link to="#!" className="btn-close" onClick={props.handler}>
+            <Link to="#!" className="btn-close" onClick={handler}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="14"
@@ -28,20 +27,12 @@ const Sidebar = (props) => {
           <nav aria-labelledby="Mobile Navigation">
             <ul className="sidebar-navlist">
               <li className="sidebar-item">
-                <NavLink
-                  to="/"
-                  className="sidebar-link"
-                  onClick={props.handler}
-                >
+                <NavLink to="/" className="sidebar-link" onClick={handler}>
                   Home
                 </NavLink>
               </li>
               <li className="sidebar-item">
-                <NavLink
-                  to="/about"
-                  className="sidebar-link"
-                  onClick={props.handler}
-                >
+                <NavLink to="/about" className="sidebar-link" onClick={handler}>
                   About Us
                 </NavLink>
               </li>
@@ -49,7 +40,7 @@ const Sidebar = (props) => {
                 <NavLink
                   to="/solutions"
                   className="sidebar-link"
-                  onClick={props.handler}
+                  onClick={handler}
                 >
                   Solutions
                 </NavLink>
@@ -58,7 +49,7 @@ const Sidebar = (props) => {
                 <NavLink
                   to="/contact"
                   className="sidebar-link"
-                  onClick={props.handler}
+                  onClick={handler}
                 >
                   Contact
                 </NavLink>
@@ -68,11 +59,7 @@ const Sidebar = (props) => {
 
           <div className="sidebar-footer">
             <SocialLinks />
-            <Link
-              to="../contact"
-              className="btn-primary"
-              onClick={props.handler}
-            >
+            <Link to="../contact" className="btn-primary" onClick={handler}>
               Get Started
             </Link>
           </div>
@@ -80,11 +67,6 @@ const Sidebar = (props) => {
       </div>
     </div>
   );
-};
-
-Sidebar.prototype = {
-  classNm: PropTypes.string.isRequired,
-  handler: PropTypes.func.isRequired,
 };
 
 export default Sidebar;

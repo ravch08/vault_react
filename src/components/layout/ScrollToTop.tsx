@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 const ScrollToTop = () => {
-  const [scrollToTop, setScrollToTop] = useState();
+  const [scrollToTop, setScrollToTop] = useState("");
 
   const isScrollToTop = () => {
     const scrollTop = window.scrollY;
