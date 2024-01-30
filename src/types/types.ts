@@ -1,5 +1,3 @@
-export type SubmitHandlerProps = (data: object | null) => void;
-
 export type ButtonProps = {
   target: string;
 };
@@ -15,35 +13,4 @@ export type RatingProps = {
 export type SidebarProps = {
   classNm: string;
   handler: () => void;
-};
-
-export type FeatureItemProps = {
-  title: string;
-  imgSrc: string;
-  description: string;
-};
-
-export type WhyItemProps = {
-  id?: number;
-  title: string;
-  description: string;
-};
-
-export type TestimonialProps = {
-  id?: number;
-  user: string;
-  rating: number;
-  imgSrc: string;
-  designation: string;
-  description: string;
-};
-
-export type TeamProps = {
-  id?: number;
-  user: string;
-  imgSrc: string;
-  facebook: string;
-  linkedIn: string;
-  twitter: string;
-  designation: string;
 };

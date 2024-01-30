@@ -1,6 +1,6 @@
-import { WhyItemProps } from "../../types/types";
+import { WhyVaultProps } from "../sections/WhyVault";
 
-const WhyItem = (props: WhyItemProps) => {
+const WhyItem = (props: WhyVaultProps) => {
   return (
     <div className="why-item">
       <h3>{props.id}</h3>

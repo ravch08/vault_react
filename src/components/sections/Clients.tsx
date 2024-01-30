@@ -17,22 +17,52 @@ const Clients = () => {
 
         <div className="clients-wrapper">
           <figure>
-            <img src={Client1} width="150" alt="payment-solutions-logo-1" />
+            <img
+              width="150"
+              src={Client1}
+              loading="lazy"
+              alt="payment-solutions-logo-1"
+            />
           </figure>
           <figure>
-            <img src={Client2} width="150" alt="payment-solutions-logo-2" />
+            <img
+              width="150"
+              src={Client2}
+              loading="lazy"
+              alt="payment-solutions-logo-2"
+            />
           </figure>
           <figure>
-            <img src={Client3} width="150" alt="payment-solutions-logo-3" />
+            <img
+              width="150"
+              src={Client3}
+              loading="lazy"
+              alt="payment-solutions-logo-3"
+            />
           </figure>
           <figure>
-            <img src={Client4} width="150" alt="payment-solutions-logo-4" />
+            <img
+              width="150"
+              src={Client4}
+              loading="lazy"
+              alt="payment-solutions-logo-4"
+            />
           </figure>
           <figure>
-            <img src={Client5} width="150" alt="payment-solutions-logo-5" />
+            <img
+              width="150"
+              src={Client5}
+              loading="lazy"
+              alt="payment-solutions-logo-5"
+            />
           </figure>
           <figure>
-            <img src={Client6} width="150" alt="payment-solutions-logo-6" />
+            <img
+              width="150"
+              src={Client6}
+              loading="lazy"
+              alt="payment-solutions-logo-6"
+            />
           </figure>
         </div>
       </div>

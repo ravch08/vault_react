@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import { TeamProps } from "../../types/types";
+import { TeamsProps } from "../sections/Teams";
 
-const TeamItem = (props: TeamProps) => {
+const TeamItem = (props: TeamsProps) => {
   return (
     <div className="team-item">
       <figure>

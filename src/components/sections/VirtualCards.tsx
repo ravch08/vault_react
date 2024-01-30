@@ -25,21 +25,24 @@ const VirtualCards = () => {
 
           <div className="virtual-card-images">
             <img
-              className="virtual-img-1"
+              loading="lazy"
               src={VirtualCard1}
+              className="virtual-img-1"
               alt="payment-solutions-spending-breakdown-card"
             />
 
             <div className="virtual-img">
               <img
-                className="virtual-img-2"
+                loading="lazy"
                 src={VirtualCard2}
+                className="virtual-img-2"
                 alt="payment-solutions-balance-money-card"
               />
 
               <img
-                className="virtual-img-3"
+                loading="lazy"
                 src={VirtualCard3}
+                className="virtual-img-3"
                 alt="payment-solutions-received-money-card"
               />
             </div>

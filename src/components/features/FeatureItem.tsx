@@ -1,6 +1,6 @@
-import { FeatureItemProps } from "../../types/types";
+import { FeatureProps } from "../sections/Features";
 
-const FeatureItem = ({ imgSrc, title, description }: FeatureItemProps) => {
+const FeatureItem = ({ imgSrc, title, description }: FeatureProps) => {
   return (
     <div className="feature-item">
       <img src={imgSrc} alt={title} />

@@ -26,19 +26,19 @@ export { default as TransactionCard } from "../../assets/payment-solutions-trans
 export { default as VisaCard } from "../../assets/payment-solutions-visa-card.webp";
 export { default as WorkerCard } from "../../assets/payment-solutions-worker-card.webp";
 
-export { default as Button } from "../layout/Button";
-export { default as ContactForm } from "../layout/ContactForm";
-export { default as FeatureItem } from "../layout/FeatureItem";
-export { default as Loader } from "../layout/Loader";
-export { default as Location } from "../layout/Location";
-export { default as PageBanner } from "../layout/PageBanner";
-export { default as Rating } from "../layout/Rating";
-export { default as ScrollToTop } from "../layout/ScrollToTop";
-export { default as Sidebar } from "../layout/Sidebar";
-export { default as SocialLinks } from "../layout/SocialLinks";
-export { default as TeamItem } from "../layout/TeamItem";
-export { default as TestimonialItem } from "../layout/TestimonialItem";
-export { default as WhyItem } from "../layout/WhyItem";
+export { default as Button } from "../features/Button";
+export { default as ContactForm } from "../features/ContactForm";
+export { default as FeatureItem } from "../features/FeatureItem";
+export { default as Loader } from "../features/Loader";
+export { default as Location } from "../features/Location";
+export { default as PageBanner } from "../features/PageBanner";
+export { default as Rating } from "../features/Rating";
+export { default as ScrollToTop } from "../features/ScrollToTop";
+export { default as Sidebar } from "../features/Sidebar";
+export { default as SocialLinks } from "../features/SocialLinks";
+export { default as TeamItem } from "../features/TeamItem";
+export { default as TestimonialItem } from "../features/TestimonialItem";
+export { default as WhyItem } from "../features/WhyItem";
 
 export { default as About } from "../pages/About";
 export { default as Contact } from "../pages/Contact";

@@ -1,26 +1,24 @@
 import { useQuery } from "@tanstack/react-query";
-import { getWhyItems } from "../../services/apiWhyItems";
-import { Loader, WhyItem } from "../utils/helper";
+import { number, string, z } from "zod";
+
+import { getWhyVault } from "../utils/api";
+import { WhyItem } from "../utils/helper";
+
+const whyVaultSchema = z.object({
+  id: number().optional(),
+  title: string().min(5, { message: "Atleast 5 charaters are required!" }),
+  description: string().min(5, {
+    message: "Atleast 5 charaters are required!",
+  }),
+});
+
+export type WhyVaultProps = z.infer<typeof whyVaultSchema>;
 
 const WhyVault = () => {
-  const { data, isLoading, error } = useQuery({
-    queryKey: ["whyItems"],
-    queryFn: getWhyItems,
+  const { data } = useQuery({
+    queryKey: ["whyVault"],
+    queryFn: getWhyVault,
   });
-
-  if (error) {
-    console.error(error);
-    throw new Error("Could not load why items!");
-  }
-
-  const whyItemsList = data?.map((whyitem) => (
-    <WhyItem
-      id={whyitem.id}
-      key={whyitem.id}
-      title={whyitem.title}
-      description={whyitem.description}
-    />
-  ));
 
   return (
     <section className="whyVault" aria-labelledby="Why use Vault Bank">
@@ -37,7 +35,14 @@ const WhyVault = () => {
           </div>
 
           <div className="why-items">
-            {isLoading ? <Loader /> : whyItemsList}
+            {data?.map((whyitem: WhyVaultProps) => (
+              <WhyItem
+                id={whyitem.id}
+                key={whyitem.id}
+                title={whyitem.title}
+                description={whyitem.description}
+              />
+            ))}
           </div>
         </div>
       </div>

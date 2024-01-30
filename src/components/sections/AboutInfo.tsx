@@ -6,7 +6,7 @@ const AboutInfo = () => {
       <div className="container">
         <div className="about-wrapper">
           <div className="about-image">
-            <img src={Customer} alt="customer" />
+            <img src={Customer} alt="customer" loading="lazy" />
 
             <div className="customer-quote">
               <p>

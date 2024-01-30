@@ -1,32 +1,34 @@
 import { useQuery } from "@tanstack/react-query";
-import { Loader, TestimonialItem } from "../utils/helper";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import { number, string, z } from "zod";
 
 import "swiper/css";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { getTestimonials } from "../../services/apiTestimonials";
+import { getTestimonials } from "../utils/api";
+import { TestimonialItem } from "../utils/helper";
+
+export const testimonialSchema = z.object({
+  id: number().optional(),
+  user: string().min(5, {
+    message: "Atleast 5 charaters are required!",
+  }),
+  rating: number(),
+  designation: string().min(5, {
+    message: "Atleast 5 charaters are required!",
+  }),
+  imgSrc: string().url(),
+  description: string().min(5, {
+    message: "Atleast 5 charaters are required!",
+  }),
+});
+
+export type TestimonialProps = z.infer<typeof testimonialSchema>;
 
 const Testimonials = () => {
   const { data, error, isLoading } = useQuery({
-    queryKey: ["testimonialItems"],
+    queryKey: ["testimonials"],
     queryFn: getTestimonials,
   });
-
-  if (error) {
-    console.error(error);
-    throw new Error("Could not load Testimonial Items!");
-  }
-
-  const testimonialItemsList = data?.map((testimonialItem) => (
-    <SwiperSlide key={testimonialItem.id}>
-      <TestimonialItem
-        user={testimonialItem.user}
-        imgSrc={testimonialItem.imgSrc}
-        rating={testimonialItem.rating}
-        designation={testimonialItem.designation}
-        description={testimonialItem.description}
-      ></TestimonialItem>
-    </SwiperSlide>
-  ));
 
   return (
     <section className="testimonials" aria-labelledby="Testimonials">
@@ -56,7 +58,17 @@ const Testimonials = () => {
               },
             }}
           >
-            {isLoading ? <Loader /> : testimonialItemsList}
+            {data?.map((testimonialItem: TestimonialProps) => (
+              <SwiperSlide key={testimonialItem.id}>
+                <TestimonialItem
+                  user={testimonialItem.user}
+                  imgSrc={testimonialItem.imgSrc}
+                  rating={testimonialItem.rating}
+                  designation={testimonialItem.designation}
+                  description={testimonialItem.description}
+                ></TestimonialItem>
+              </SwiperSlide>
+            ))}
           </Swiper>
         </div>
       </div>

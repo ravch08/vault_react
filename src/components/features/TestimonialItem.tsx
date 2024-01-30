@@ -1,4 +1,4 @@
-import { TestimonialProps } from "../../types/types";
+import { TestimonialProps } from "../sections/Testimonials";
 import { Rating } from "../utils/helper";
 
 const TestimonialItem = (props: TestimonialProps) => {

@@ -1,27 +1,32 @@
 import { useQuery } from "@tanstack/react-query";
+import { number, string, z } from "zod";
 
-import { getFeatures } from "../../services/apiFeatures";
-import { FeatureItem, Loader } from "../utils/helper";
+import { getFeatureItems } from "../utils/api";
+import { FeatureItem } from "../utils/helper";
+
+export const featureSchema = z.object({
+  id: number().optional(),
+  title: string().min(5, {
+    message: "Atleast 5 charaters are required!",
+  }),
+  imgSrc: string().url(),
+  description: string().min(5, {
+    message: "Atleast 5 charaters are required!",
+  }),
+});
+
+export type FeatureProps = z.infer<typeof featureSchema>;
 
 const Features = () => {
-  const { data, error, isLoading } = useQuery({
+  const { data, error } = useQuery({
     queryKey: ["featureItems"],
-    queryFn: getFeatures,
+    queryFn: getFeatureItems,
   });
 
   if (error) {
     console.error(error);
     throw new Error("Could not load Testimonial Items!");
   }
-
-  const featureItemsList = data?.map((featureItem) => (
-    <FeatureItem
-      key={featureItem.id}
-      title={featureItem.title}
-      imgSrc={featureItem.imgSrc}
-      description={featureItem.description}
-    />
-  ));
 
   return (
     <section className="features" aria-labelledby="Features">
@@ -38,7 +43,14 @@ const Features = () => {
           </div>
 
           <div className="feature-items">
-            {isLoading ? <Loader /> : featureItemsList}
+            {data?.map((featureItem: FeatureProps) => (
+              <FeatureItem
+                key={featureItem.id}
+                title={featureItem.title}
+                imgSrc={featureItem.imgSrc}
+                description={featureItem.description}
+              />
+            ))}
           </div>
         </div>
       </div>

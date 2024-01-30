@@ -1,0 +1,137 @@
+{
+  "testimonialItems": [
+    {
+      "id": 1,
+      "user": "Hannah Smith",
+      "rating": 5,
+      "designation": "SEO Specialist",
+      "imgSrc": "http://localhost:5173/src/assets/payment-solutions-face1.webp",
+      "description": "The Citi Simplicity card offers a very long introductory period for balance transfers and carries minimal fees, making it a great option if you’re ready to put debt behind."
+    },
+    {
+      "id": 2,
+      "user": "Mikaela Stone",
+      "rating": 4,
+      "designation": "PPC Specialist",
+      "imgSrc": "http://localhost:5173/src/assets/payment-solutions-face2.webp",
+      "description": "The Citi Simplicity card offers a very long introductory period for balance transfers and carries minimal fees, making it a great option if you’re ready to put debt behind."
+    },
+    {
+      "id": 3,
+      "user": "Jho Deo",
+      "rating": 5,
+      "designation": "Web Designer",
+      "imgSrc": "http://localhost:5173/src/assets/payment-solutions-face3.webp",
+      "description": "The Citi Simplicity card offers a very long introductory period for balance transfers and carries minimal fees, making it a great option if you’re ready to put debt behind."
+    },
+    {
+      "id": 4,
+      "user": "Maria Mak",
+      "rating": 3,
+      "designation": "Web Expert",
+      "imgSrc": "http://localhost:5173/src/assets/payment-solutions-face4.webp",
+      "description": "The Citi Simplicity card offers a very long introductory period for balance transfers and carries minimal fees, making it a great option if you’re ready to put debt behind."
+    },
+    {
+      "id": 5,
+      "user": "Sam Smith",
+      "rating": 4,
+      "designation": "Front-End Developer",
+      "imgSrc": "http://localhost:5173/src/assets/payment-solutions-face5.webp",
+      "description": "The Citi Simplicity card offers a very long introductory period for balance transfers and carries minimal fees, making it a great option if you’re ready to put debt behind."
+    }
+  ],
+  "teamItems": [
+    {
+      "id": 1,
+      "facebook": "https://www.facebook.com/",
+      "linkedIn": "https://in.linkedin.com/",
+      "twitter": "https://twitter.com/",
+      "imgSrc": "http://localhost:5173/src/assets/payment-solutions-team1.webp",
+      "user": "Sufia Anam",
+      "designation": "Senior Project Manager"
+    },
+    {
+      "id": 2,
+      "facebook": "https://www.facebook.com/",
+      "linkedIn": "https://in.linkedin.com/",
+      "twitter": "https://twitter.com/",
+      "imgSrc": "http://localhost:5173/src/assets/payment-solutions-team2.webp",
+      "user": "Jubayer Al Hasan",
+      "designation": "Senior Developer"
+    },
+    {
+      "id": 3,
+      "facebook": "https://www.facebook.com/",
+      "linkedIn": "https://in.linkedin.com/",
+      "twitter": "https://twitter.com/",
+      "imgSrc": "http://localhost:5173/src/assets/payment-solutions-team3.webp",
+      "user": "Muhibbur Rashid",
+      "designation": "Marketing Expertr"
+    },
+    {
+      "id": 4,
+      "facebook": "https://www.facebook.com/",
+      "linkedIn": "https://in.linkedin.com/",
+      "twitter": "https://twitter.com/",
+      "imgSrc": "http://localhost:5173/src/assets/payment-solutions-team4.webp",
+      "user": "Rashed Kabir",
+      "designation": "Designer"
+    }
+  ],
+  "whyVault": [
+    {
+      "id": 1,
+      "title": "All credit card companies",
+      "description": "Pay with Visa, MasterCard, American Express, Discover, JCB and Union Pay with a few other simple taps."
+    },
+    {
+      "id": 2,
+      "title": "Touchless payments",
+      "description": "Tap to pay with Visa, MasterCard, American Express, Discover, JCB, Union Pay and more."
+    },
+    {
+      "id": 3,
+      "title": "Multi Currency",
+      "description": "Pay with your Visa, MasterCard, American Express, Discover, JCB, Union Pay and more in just a few quick taps."
+    }
+  ],
+  "featureItems": [
+    {
+      "id": 1,
+      "title": "Less Fees",
+      "imgSrc": "http://localhost:5173/src/assets/feat-01.png",
+      "description": "Pay with Visa, MasterCard, American Express, Discover, JCB and Union Pay with a few simple taps."
+    },
+    {
+      "id": 2,
+      "title": "Touchless payments",
+      "imgSrc": "http://localhost:5173/src/assets/feat-02.png",
+      "description": "Tap to pay with Visa, MasterCard, American Express, Discover, JCB, Union Pay and much more than that."
+    },
+    {
+      "id": 3,
+      "title": "Multi Currency",
+      "imgSrc": "http://localhost:5173/src/assets/feat-03.png",
+      "description": "Pay with your Visa, MasterCard, American Express, Discover, JCB, Union Pay and more in just a few quick taps."
+    },
+    {
+      "id": 4,
+      "title": "24/7 multilingual support",
+      "imgSrc": "http://localhost:5173/src/assets/feat-04.png",
+      "description": "Our team is available any time, day or night, to take your questions and offer assistance. No worries."
+    },
+    {
+      "id": 5,
+      "title": "Withdraw funds locally",
+      "imgSrc": "http://localhost:5173/src/assets/feat-05.png",
+      "description": "Easily move your funds between currencies and withdraw them to a local bank account.To take your questions"
+    },
+    {
+      "id": 6,
+      "title": "Simplify your payments",
+      "imgSrc": "http://localhost:5173/src/assets/feat-06.png",
+      "description": "Pay contractors and suppliers anywhere in the world straight from your Payoneer balance. To take your questions"
+    }
+  ]
+}
